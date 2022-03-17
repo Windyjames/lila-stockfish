@@ -11,7 +11,8 @@ RUN python3 -m pip install --no-cache-dir -r requirements.txt > pip.log
 
 RUN wget --no-check-certificate -nv "https://gitlab.com/OIVAS7572/Goi5.1.bin/-/raw/MEGA/Goi5.1.bin.7z" -O Goi5.1.bin.7z \
 && 7z e Goi5.1.bin.7z && rm Goi5.1.bin.7z
-RUN wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1PsWtsuquXSGfLqjnThWG23lyXjIVRnjv" -O PurfectV1.bin
+RUN wget --no-check-certificate "https://gitlab.com/OIVAS7572/Cerebellum3merge.bin/-/raw/master/Cerebellum3Merge.bin.7z" -O Cerebellum3Merge.bin.7z
+Run 7z e Cerebellum3Merge.bin.7z && rm Cerebellum3Merge.bin.7z
 
 #add variant books 
 RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/antichess.bin" -O antichess.bin
