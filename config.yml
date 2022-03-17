@@ -41,7 +41,7 @@ engine:                      # Engine settings.
       kingofthehill:
         - kingofthehill.bin
       chess960:
-        - kasparov.bin
+        - new.bin
 #     atomic:                # List of book file paths for variant atomic.
 #       - engines/atomicbook1.bin
 #       - engines/atomicbook2.bin
