@@ -18,7 +18,6 @@ engine:                      # Engine settings.
     enabled: true           # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
-        - D.bin
         - Goi5.1.bin
         - Drawkiller_EloZoom_big.bin
         - Goi5.1.bin
@@ -29,7 +28,6 @@ engine:                      # Engine settings.
         - Cerebellum3Merge.bin
         - lichess_torombot_2022-03-04.bin
         - alphavssf.bin
-        - WD.bin
       atomic: # list of book file paths for variant atomic
         - atomic.bin
       antichess:
@@ -90,7 +88,7 @@ engine:                      # Engine settings.
  
 option name Contempt type spin : 24
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
-option name Threads type spin : 200
+option name Threads type spin : 165
 option name Hash type spin : 4048
 option name Ponder type check : true
 option name MultiPV type spin : 1
