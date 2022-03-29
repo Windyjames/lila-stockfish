@@ -73,7 +73,7 @@ engine:                      # Engine settings.
       move_quality: "best"   # One of "good", "best".
       max_score_difference: 50 # Only for move_quality: "good". The maximum score difference (in cp) between the best move and the other moves.
       min_depth: 100
-      min_knodes: 10
+      min_knodes: 1000
     online_egtb:
       enabled: true
       min_time: 120
