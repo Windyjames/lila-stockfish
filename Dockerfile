@@ -29,7 +29,7 @@ RUN wget --no-check-certificate "https://data.stockfishchess.org/nn/nn-6877cd244
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-RUN chmod +x sf
+RUN chmod +x chess-engine
 #RUN chmod +x fsf
 #RUN chmod +x msf
 # Engine name is here ^^^^^^
