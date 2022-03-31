@@ -65,7 +65,7 @@ engine:                      # Engine settings.
 #   Hash: 256
   uci_options:               # arbitrary UCI options passed to the engine
  
-Threads: 5
+Threads: 4
 Hash: 256
 Move Overhead: 2455
 Ponder: true
