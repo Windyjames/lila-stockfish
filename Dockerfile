@@ -22,16 +22,17 @@ RUN 7z e Cerebellum3Merge.bin.7z && rm Cerebellum3Merge.bin.7z
 #RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/threeCheck.bin" -O threeCheck.bin
 #RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/kingOfTheHill.bin" -O kingofthehill.bin
 
-RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/08e0f52b77edb929989c68c49e954b9bc5d7d67e/linux64modern/stockfish_22032822_x64_modern.zip" -O chess-engine.zip
+RUN bash msf.sh
+RUN rm master.zip
+RUN rm -r Stockfish-master
+RUN bash sf.sh
+#RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/fairy-stockfish-largeboard_x86-64-modern" -O fsf
 RUN wget --no-check-certificate "https://data.stockfishchess.org/nn/nn-6877cd24400e.nnue" -O nn-6877cd24400e.nnue
-RUN 7z e chess-engine.zip && rm chess-engine.zip && mv stockfish* chess-engine
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
-RUN chmod +x chess-engine
-#RUN chmod +x fsf
-#RUN chmod +x msf
+RUN chmod +x sf
 # Engine name is here ^^^^^^
 
 CMD python3 run.py
