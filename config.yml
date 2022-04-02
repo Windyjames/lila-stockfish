@@ -67,7 +67,7 @@ engine:                      # Engine settings.
  
 Threads: 4
 Hash: 300
-Move Overhead: 2000
+Move Overhead: 2300
 Ponder: true
 MultiPV: 1
 Skill Level: 20
