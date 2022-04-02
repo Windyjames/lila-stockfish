@@ -47,7 +47,7 @@ engine:                      # Engine settings.
       min_depth: 20          # Only for move_quality: "best".
       contribute: true
     lichess_cloud_analysis:
-      enabled: true
+      enabled: false
       min_time: 28
       move_quality: "best"   # One of "good", "best".
       max_score_difference: 50 # Only for move_quality: "good". The maximum score difference (in cp) between the best move and the other moves.
@@ -66,7 +66,7 @@ engine:                      # Engine settings.
   uci_options:               # arbitrary UCI options passed to the engine
  
 Threads: 4
-Hash: 256
+Hash: 300
 Move Overhead: 2000
 Ponder: true
 MultiPV: 1
