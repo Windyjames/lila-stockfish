@@ -65,9 +65,9 @@ engine:                      # Engine settings.
 #   Hash: 256
   uci_options:               # arbitrary UCI options passed to the engine
  
-Threads: 13
+Threads: 4
 Hash: 256
-Move Overhead: 3000
+Move Overhead: 2000
 Ponder: true
 MultiPV: 1
 Skill Level: 20
