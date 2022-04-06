@@ -22,10 +22,6 @@ RUN 7z e Cerebellum3Merge.bin.7z && rm Cerebellum3Merge.bin.7z
 #RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/threeCheck.bin" -O threeCheck.bin
 #RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/kingOfTheHill.bin" -O kingofthehill.bin
 
-RUN bash msf.sh
-RUN rm master.zip
-RUN rm -r Stockfish-master
-RUN bash sf.sh
 #RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/fairy-stockfish-largeboard_x86-64-modern" -O fsf
 RUN wget --no-check-certificate "https://data.stockfishchess.org/nn/nn-6877cd24400e.nnue" -O nn-6877cd24400e.nnue
 
