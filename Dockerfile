@@ -22,16 +22,16 @@ RUN 7z e Cerebellum3Merge.bin.7z && rm Cerebellum3Merge.bin.7z
  RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/threeCheck.bin" -O threeCheck.bin
  RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/kingOfTheHill.bin" -O kingofthehill.bin
 
-RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/fairy-stockfish-largeboard_x86-64-modern" -O fsf
 RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/xiangqi-83f16c17fe26.nnue" -O xiangqi-83f16c17fe26.nnue
 RUN wget --no-check-certificate "https://data.stockfishchess.org/nn/nn-6877cd24400e.nnue" -O nn-6877cd24400e.nnue
 RUN bash sf.sh
+RUN bash msf.sh
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 RUN chmod +x sf
-RUN chmod +x fsf
+RUN chmod +x msf
 # Engine name is here ^^^^^^
 
 CMD python3 run.py
